@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_excel("product.csv")
+df = pd.read_csv("product.csv")
 
 df["total_price"] = df["price"] * df["quantity"]
 total_sum = df["total_price"].sum()
